@@ -536,6 +536,7 @@ We will learn more about *git* in @sec-codemgmt. For now, follow instructions in
 You either have installed R and RStudio at the start of this chapter or you had them in your computer already. If you belong to the second group, make sure that you update both R and RStudio to get the latest versions. Working with the latest version of R, RStudio and packages helps to avoid errors due to dependency conflicts. Now, let's install all the required packages for this course and load them.
 
 ```{r message=FALSE, warning=FALSE, results=FALSE}
+#| eval: false
 use_pkgs <-  c("dplyr", "tidyr", "readr", "lubridate", "stringr", "purrr",
               "ggplot2", "tidyverse", "visdat", "terra", "hexbin", "jsonlite",
               "MODISTools", "forcats", "yardstick", "recipes", "caret",
@@ -582,6 +583,7 @@ To install the `netCDF` command-line tools, follow these instructions:
      
 You can check if the installation was successful by running the following code in the RStudio console:
 ```{r}
+#| eval: false
 terra::rast("https://raw.githubusercontent.com/geco-bern/agds_book/refs/heads/main/book/data/demo_data.nc")
 ```
 
